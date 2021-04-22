@@ -3,21 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <title>String Typer</title>
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
 </head>
 <body>
-    <h1>String Typer</h1>
-    <p class="frase">Lorem ipsum dolor sit am  et, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <ul class="lista">
-        <li><span id="tamanho-frase">30</span> palavras</li>
-        <li><span id="tempo-digitacao">10</span> segundos</li>
-        <textarea class="campo-digitacao" id="" cols="30" rows="10"></textarea>
-        <button id="botao-reiniciar">GO!</button>
-        <ul>
-            <li><span id="contador-caracteres">0</span> CARACTERES</li>
-            <li><span id="contador-palavras">0</span> PALAVRAS </li>
-        </ul>
-    </ul>
+    <div class="container">
+        <h1 class="center">String Typer</h1>
+            <p class="frase center">Lorem ipsum dolor sit am  et, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            
+            <ul class="lista center">
+                <li>
+                    <i class="small material-icons icones">description</i>
+                    <span id="tamanho-frase">30</span> palavras
+                </li>
+                <li>
+                    <i class="small material-icons icones">query_builder</i>
+                    <span id="tempo-digitacao">10</span> segundos
+                </li>
+            </ul>  
+        
+            <textarea id="campo-digitacao" cols="30" rows="10"></textarea>
+            <div class="botoes">
+                <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons" id="botao-reiniciar">restore</i>
+                </a>
+            </div>
+
+            <ul class="center">
+                    <li><span id="contador-caracteres">0</span> CARACTERES</li>
+                    <li><span id="contador-palavras">0</span> PALAVRAS </li>
+            </ul>
+
+            <section class="placar">
+                <h3 class="center">Placar</h3>
+                <table class="centered bordered">
+                    <thead>
+                        <tr> 
+                            <th>Nome</th>
+                            <th>Nº de Palavras</th>
+                            <th>Remover</th>
+                        </tr> 
+                    </thead>
+                   <tbody>
+                      
+                   </tbody>
+                </table>
+            </section>
+    </div>
+    
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/placar.js"></script>
 </body>
 </html>

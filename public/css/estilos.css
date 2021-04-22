@@ -1,0 +1,29 @@
+#campo-digitacao{
+    font-size: 20px;
+    height: 130px;
+}
+
+.frase {
+    font-size: 20px;
+    text-align: inherit;
+}
+
+.campo-off{
+    background-color: antiquewhite;
+}
+
+.campo-on{
+    background-color: white;
+}
+
+.icones{
+    vertical-align: middle;
+}
+
+.campo-ok{
+    border: 3px solid antiquewhite;
+}
+
+.campo-errado{
+    border: 3px solid purple;
+}
